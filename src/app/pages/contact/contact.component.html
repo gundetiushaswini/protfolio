@@ -1,0 +1,76 @@
+<div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col items-center justify-center py-12 px-6">
+  
+    <div class="text-center mb-12">
+      <h2 class="text-5xl font-extrabold text-white">Get in Touch</h2>
+      <p class="text-lg text-gray-300 mt-3">Feel free to contact me for any inquiries or collaborations.</p>
+    </div>
+  
+    <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 bg-gray-950 shadow-xl rounded-lg p-10">
+      
+   
+      <div class="space-y-6">
+        <h3 class="text-3xl font-semibold text-white">Contact Information</h3>
+        <p class="text-gray-400 text-lg">Let's connect! You can reach out to me through the following details:</p>
+  
+        <div class="space-y-5">
+          <div class="flex items-center space-x-4">
+            <span class="text-blue-400 text-2xl">Location 📌</span>
+            <p class="text-gray-300 text-lg">Hyderabad, India</p>
+          </div>
+  
+          <div class="flex items-center space-x-4">
+            <span class="text-blue-400 text-2xl">📞 contactnumber </span>
+            <p class="text-gray-300 text-lg">+91-9154827556</p>
+          </div>
+  
+          <div class="flex items-center space-x-4">
+            <span class="text-blue-400 text-2xl">✉️ Email</span>
+            <a href="mailto:ushaswinigundeti98@mail.com" class="text-blue-400 text-lg hover:underline">
+              ushaswinigundeti98&#64;.com
+            </a>
+          </div>
+  
+          <div class="flex items-center space-x-4">
+            <span class="text-blue-400 text-2xl">🔗attachments</span>
+            <a href="https://github.com/gundetiushaswini" target="_blank" class="text-blue-400 text-lg hover:underline">
+              GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Section: Contact Form -->
+      <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+        <h3 class="text-3xl font-semibold text-white mb-6">Send a Message</h3>
+  
+        <form (ngSubmit)="submitContactForm()" #contactForm="ngForm" class="space-y-6">
+          
+          <div>
+            <label class="block text-gray-300 font-medium">Your Name</label>
+            <input type="text" [(ngModel)]="contactData.name" name="name" required
+              class="w-full bg-gray-700 text-white p-3 rounded-lg border border-gray-600 focus:ring-2 focus:ring-blue-500">
+          </div>
+  
+          <div>
+            <label class="block text-gray-300 font-medium">Your Email</label>
+            <input type="email" [(ngModel)]="contactData.email" name="email" required
+              class="w-full bg-gray-700 text-white p-3 rounded-lg border border-gray-600 focus:ring-2 focus:ring-blue-500">
+          </div>
+  
+          <div>
+            <label class="block text-gray-300 font-medium">Your Message</label>
+            <textarea [(ngModel)]="contactData.message" name="message" rows="4" required
+              class="w-full bg-gray-700 text-white p-3 rounded-lg border border-gray-600 focus:ring-2 focus:ring-blue-500"></textarea>
+          </div>
+  
+          <button type="submit" [disabled]="!contactForm.form.valid"
+            class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+  
+    </div>
+  </div>
+  
+  

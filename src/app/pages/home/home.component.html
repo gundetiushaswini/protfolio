@@ -1,0 +1,64 @@
+
+<section class="h-screen flex flex-col justify-center items-center text-center text-white px-6 bg-cover bg-center bg-no-repeat relative overflow-hidden"
+    style="background-image: url('https://v3.tailwindcss.com/_next/static/media/blog-post-form-dark@90.5b274bea.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+    <div class="relative z-10 animate-fade-in-up flex flex-col items-center">
+        <img src="https://t4.ftcdn.net/jpg/08/35/71/47/360_F_835714791_ko7uXv4dEEqkr9WBdxICNeG8TCkKpuBf.jpg" alt="sitha mahalaxmi" class="w-40 h-40 rounded-full border-4 border-blue-400 shadow-lg mb-4 animate-bounce-slow">
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+            <span class="italic text-gray-300">Welcome to My Digital Space</span>
+            <br>
+            <span class="text-blue-400 animate-pulse">I Build Stunning Digital Solutions</span>
+        </h1>
+        <p class="mt-4 text-lg text-gray-400 opacity-80 animate-fade-in-delay">Hello, I'm sitha mahalaxmi - a Full Stack Developer passionate about UI/UX and web technologies.</p>
+        <div class="mt-6 flex items-center space-x-4 animate-bounce-slow">
+            <a href="mailto:gundetiushaswini@gmail.com"
+                class="px-6 py-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">
+                Let's Connect
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen flex flex-col items-center justify-center text-white bg-black px-6">
+    <h1 class="text-5xl font-bold text-center mb-4 text-blue-400">
+        About Me
+    </h1>
+    <p class="text-xl text-center mb-6 max-w-3xl leading-relaxed">
+         Passionate about technology and innovation, I am a Full-Stack Developer specializing in <span class="text-blue-400 font-semibold">Angular, Django, and UI/UX</span>. With a strong foundation in web development, I create interactive, user-friendly digital experiences.
+    </p>
+    <a href="/projects" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105">
+        Explore My Work
+    </a>
+</section>
+
+<section class="min-h-screen bg-black text-white py-12 px-6">
+    <h2 class="text-4xl font-bold text-center mb-8 animate-fade-in-up">My Creative Works </h2>
+    <div class="grid md:grid-cols-3 gap-6 animate-fade-in-up">
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+            <h3 class="text-xl font-bold text-blue-400"> Project 1</h3>
+            <p class="text-gray-300 mt-2">An innovative web application that enhances user experience through cutting-edge UI/UX design.</p>
+            <a href="/projects" class="mt-4 inline-block text-blue-400 hover:text-blue-300 transition">View Project →</a>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+            <h3 class="text-xl font-bold text-blue-400"> Project 2</h3>
+            <p class="text-gray-300 mt-2">A data-driven application leveraging Django and Angular to deliver seamless performance.</p>
+            <a href="/projects" class="mt-4 inline-block text-blue-400 hover:text-blue-300 transition">View Project →</a>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
+            <h3 class="text-xl font-bold text-blue-400"> Project 3</h3>
+            <p class="text-gray-300 mt-2">An AI-powered tool designed to revolutionize digital interactions.</p>
+            <a href="/projects" class="mt-4 inline-block text-blue-400 hover:text-blue-300 transition">View Project →</a>
+        </div>
+    </div>
+</section>
+<div class="py-16 bg-black text-white">
+    <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center">My Work experinces </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div *ngFor="let p of work_experince " class="relative group bg-gray-700 p-6 rounded-lg shadow-lg transition hover:scale-105">
+                        <h3 class="text-2xl font-bold">{{ p.company_name }} </h3>
+                        <p class="text-lg">{{ p.job_title}}</p>
+                        <div class="opacity-0 group-hover:opacity-100 transition mt-4">
+                            </div> 
+                        
